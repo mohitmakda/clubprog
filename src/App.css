@@ -110,7 +110,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
 span.navbar-text {
-    display: flex;
+    display:flex;
     align-items: center;
 }
 .social-icon {
@@ -161,10 +161,24 @@ span.navbar-text {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
-.navbar-text button span {
+
+.nav-text button{
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+
+}
+
+
+.navbar-text button span,.nav-text button{
   z-index: 1;
 }
-.navbar-text button::before {
+.navbar-text button::before,.nav-text button::before {
   content: "";
   width: 0%;
   height: 100%;
@@ -175,10 +189,10 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
+.navbar-text button:hover,.nav-text button:hover {
   color: #121212;
 }
-.navbar-text button:hover::before {
+.navbar-text button:hover::before,.nav-text button:hover::before {
 	content: "";
 	width: 100%;
 	height: 100%;

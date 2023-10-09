@@ -21,9 +21,11 @@ export const Login = () => {
                     <input type="password" name="password" required />
                 </p>
                 <p>
+                <Link to="/Dashboard">
                     <button id="sub_btn" type="submit">
                         Login
                     </button>
+                </Link>
                 </p>
                 <p style={{ color: "#000" }}>
                     First time? <Link to="/RegisterPage">Create an account</Link>.

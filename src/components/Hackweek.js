@@ -17,6 +17,7 @@ export const Hackweek = () => {
               {({ isVisible }) => (
                 <div
                   className={isVisible ? "animate__animated animate__fadeIn" : ""}
+                  id="hackweek"
                   style={{
                     display: "flex",
                     flexDirection: "column",

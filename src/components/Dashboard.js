@@ -32,17 +32,19 @@ export const Dashboard = () => {
     };
 
     return (
-        <div className={`App ${darkMode ? 'dark' : ''}`}>
+        <>
+        
+        <div className={`App ${darkMode ? 'dark' : ''}`} id="dashboard">
             <div id="loading"></div>
 
-            <section className="dashboard">
+            <section className="dashboard" style={{backgroundColor:"black"}}>
                 <div className="dash-content">
                     <div className="overview">
                         <div className="title">
                             <i className="uil uil-tachometer-fast-alt"></i>
-                            <span className="text">Dashboard</span>
+                            <span className="text" style={{color:"#fff"}}>Dashboard</span>
                         </div>
-                        <div className="boxes">
+                        <div className="boxes" >
                             <div className="box box1">
                                 <i className="uil uil-thumbs-up"></i>
                                 <span className="text">Total hackweeks</span>
@@ -63,63 +65,65 @@ export const Dashboard = () => {
                     <div className="activity">
                         <div className="title">
                             <i className="uil uil-clock-three"></i>
-                            <span className="text">hackweek results</span>
+                            <span className="text"style={{color:"#fff"}}>hackweek results</span>
                         </div>
                         <div className="activity-data">
-                            <div className="data names">
-                                <span className="data-title">Name</span>
-                                <span className="data-list">mohit makda</span>
-                                <span className="data-list">tushar gupta</span>
-                                <span className="data-list">shashwat bokhad</span>
-                                <span className="data-list">sher singh</span>
-                                <span className="data-list">elon musk</span>
-                                <span className="data-list">Ganesh Chand</span>
-                                <span className="data-list">Bikash Chand</span>
+                            <div className="data names" >
+                                <span className="data-title" style={{color:"#fff"}}>Name</span>
+                                <span className="data-list"  style={{color:"#fff"}}>mohit makda</span>
+                                <span className="data-list"  style={{color:"#fff"}}>tushar gupta</span>
+                                <span className="data-list"  style={{color:"#fff"}}>shashwat bokhad</span>
+                                <span className="data-list"  style={{color:"#fff"}}>sher singh</span>
+                                <span className="data-list"  style={{color:"#fff"}}>elon musk</span>
+                                <span className="data-list"  style={{color:"#fff"}}>Ganesh Chand</span>
+                                <span className="data-list"  style={{color:"#fff"}}>Bikash Chand</span>
                             </div>
                             <div className="data email">
-                                <span className="data-title">Project Name</span>
-                                <span className="data-list">EDRP</span>
-                                <span className="data-list">Calculator</span>
-                                <span className="data-list">mailbox</span>
-                                <span className="data-list">fb clone</span>
-                                <span className="data-list">xyz</span>
-                                <span className="data-list">xyz</span>
-                                <span className="data-list">xyz</span>
+                                <span className="data-title"  style={{color:"#fff"}}>Project Name</span>
+                                <span className="data-list"  style={{color:"#fff"}}>EDRP</span>
+                                <span className="data-list"  style={{color:"#fff"}}>Calculator</span>
+                                <span className="data-list"  style={{color:"#fff"}}>mailbox</span>
+                                <span className="data-list"  style={{color:"#fff"}}>fb clone</span>
+                                <span className="data-list" style={{color:"#fff"}}>xyz</span>
+                                <span className="data-list" style={{color:"#fff"}}>xyz</span>
+                                <span className="data-list" style={{color:"#fff"}}>xyz</span>
                             </div>
                             <div className="data joined">
-                                <span className="data-title">Submitted On</span>
-                                <span className="data-list">2022-02-12</span>
-                                <span className="data-list">2022-02-12</span>
-                                <span className="data-list">2022-02-13</span>
-                                <span className="data-list">2022-02-13</span>
-                                <span className="data-list">2022-02-14</span>
-                                <span className="data-list">2022-02-14</span>
-                                <span className="data-list">2022-02-15</span>
+                                <span className="data-title" style={{color:"#fff"}}>Submitted On</span>
+                                <span className="data-list" style={{color:"#fff"}}>2022-02-12</span>
+                                <span className="data-list" style={{color:"#fff"}}>2022-02-12</span>
+                                <span className="data-list" style={{color:"#fff"}}>2022-02-13</span>
+                                <span className="data-list" style={{color:"#fff"}}>2022-02-13</span>
+                                <span className="data-list" style={{color:"#fff"}}>2022-02-14</span>
+                                <span className="data-list" style={{color:"#fff"}}>2022-02-14</span>
+                                <span className="data-list" style={{color:"#fff"}}>2022-02-15</span>
                             </div>
                             <div className="data type">
-                                <span className="data-title">Sem</span>
-                                <span className="data-list">5th</span>
-                                <span className="data-list">3rd</span>
-                                <span className="data-list">5th</span>
-                                <span className="data-list">7th</span>
-                                <span className="data-list">1st</span>
-                                <span className="data-list">3rd</span>
-                                <span className="data-list">5th</span>
+                                <span className="data-title" style={{color:"#fff"}}>Sem</span>
+                                <span className="data-list" style={{color:"#fff"}}>5th</span>
+                                <span className="data-list" style={{color:"#fff"}}>3rd</span>
+                                <span className="data-list" style={{color:"#fff"}}>5th</span>
+                                <span className="data-list" style={{color:"#fff"}}>7th</span>
+                                <span className="data-list" style={{color:"#fff"}}>1st</span>
+                                <span className="data-list" style={{color:"#fff"}}>3rd</span>
+                                <span className="data-list" style={{color:"#fff"}}>5th</span>
                             </div>
                             <div className="data status">
-                                <span className="data-title">rank</span>
-                                <span className="data-list">#1</span>
-                                <span className="data-list">#2</span>
-                                <span className="data-list">#3</span>
-                                <span className="data-list">#4</span>
-                                <span className="data-list">#5</span>
-                                <span className="data-list">#6</span>
-                                <span className="data-list">#7</span>
+                                <span className="data-title" style={{color:"#fff"}}>rank</span>
+                                <span className="data-list" style={{color:"#fff"}}>#1</span>
+                                <span className="data-list" style={{color:"#fff"}}>#2</span>
+                                <span className="data-list" style={{color:"#fff"}}>#3</span>
+                                <span className="data-list" style={{color:"#fff"}}>#4</span>
+                                <span className="data-list" style={{color:"#fff"}}>#5</span>
+                                <span className="data-list" style={{color:"#fff"}}>#6</span>
+                                <span className="data-list"style={{color:"#fff"}}>#7</span>
+                                <span className="data-list"style={{color:"#fff"}}>#7</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+        </>
     );
 };

@@ -3,6 +3,7 @@ import './App.css';
 // import './Dashboard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
+import { DashBoardNav } from './components/DashBoardNav';
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
@@ -13,45 +14,51 @@ import { RegisterPage } from "./components/RegisterPage";
 import { Dashboard } from './components/Dashboard';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar />
+        
         <Routes>
-          <Route path="/" element={
-            <>
-              {/* <NavBar /> */}
-              <Banner />
-              <Skills />
-              <Projects />
-              <Hackweek />
-              <Footer />
-            </>
-          }>
-          </Route>
+          <Route
+            path="/"
+            element={
+              <>
+                <NavBar />
+                <Banner />
+                <Skills />
+                <Projects />
+                <Hackweek />
+                <Footer />
+              </>
+            }
+          />
           <Route
             path="/login"
             element={
+              <><NavBar />
               <Login />
+              </>
             }
-          ></Route>
-
+          />
           <Route
             path="/RegisterPage"
             element={
+              <><NavBar />
               <RegisterPage />
+              </>
             }
-          ></Route>
-          <Route
-            path="/Dashbord"
+          />
+          <Route path="/Dashboard" // Corrected path
             element={
+            <>
+              <DashBoardNav/>
               <Dashboard />
+            </>
             }
-          ></Route>
-        </Routes>
+          />
 
+        </Routes>
       </BrowserRouter>
     </div>
   );
