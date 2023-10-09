@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+// import './Dashboard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
@@ -9,41 +10,48 @@ import { Hackweek } from "./components/Hackweek";
 import { Footer } from "./components/Footer";
 import { Login } from "./components/Login";
 import { RegisterPage } from "./components/RegisterPage";
-import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { Dashboard } from './components/Dashboard';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
-    <NavBar />
-      <Routes>
-        <Route path ="/" element={
-          <>
-          {/* <NavBar /> */}
-          <Banner />
-          <Skills />
-          <Projects />
-          <Hackweek />
-          <Footer />
-         </>
-        }>
-        </Route>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={
+            <>
+              {/* <NavBar /> */}
+              <Banner />
+              <Skills />
+              <Projects />
+              <Hackweek />
+              <Footer />
+            </>
+          }>
+          </Route>
           <Route
-            path="/login.js"
+            path="/login"
             element={
-              <Login/>
+              <Login />
             }
-            ></Route>
-            
+          ></Route>
+
           <Route
             path="/RegisterPage"
             element={
-              <RegisterPage/>
+              <RegisterPage />
             }
-            ></Route>
-       </Routes>
-      
+          ></Route>
+          <Route
+            path="/Dashbord"
+            element={
+              <Dashboard />
+            }
+          ></Route>
+        </Routes>
+
       </BrowserRouter>
     </div>
   );
