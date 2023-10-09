@@ -184,6 +184,7 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
@@ -640,4 +641,4 @@ opacity: 1;
 right: 0;
 }
 
-
+/* Dashbord css */
