@@ -7,6 +7,7 @@ import { DashBoardNav } from './components/DashBoardNav';
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
+import { UpcommingEvents } from "./components/UpcommingEvents";
 import { Hackweek } from "./components/Hackweek";
 import { Footer } from "./components/Footer";
 import { Login } from "./components/Login";
@@ -28,6 +29,7 @@ function App() {
                 <Banner />
                 <Skills />
                 <Projects />
+                <UpcommingEvents/>
                 <Hackweek />
                 <Footer />
               </>

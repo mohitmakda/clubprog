@@ -59,7 +59,7 @@ export const NavBar = () => {
 
             {/* <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link> */}
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Domains</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Past-Events</Nav.Link>
+            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Past Events</Nav.Link>
 
             <Nav.Link href="#hackweek" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('hackweek')}>About-Hackweek</Nav.Link>
           </Nav>
@@ -69,7 +69,7 @@ export const NavBar = () => {
               <a href="#"><img src={navIcon2} alt="" /></a>
               <a href="#"><img src={navIcon3} alt="" /></a>
             </div>
-            <  Link to="/login" ><button className="vvd" ><span>Hackweek</span></ button></Link>
+            {/* <  Link to="/login" ><button className="vvd" ><span>Hackweek</span></ button></Link> */}
 
           </span>
         </Navbar.Collapse>
