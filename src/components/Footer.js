@@ -31,9 +31,9 @@ export const Footer = () => {
           </Col>
           <Col xs={12} sm={6} className="text-center text-sm-end" style={colStyles}>
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+            <a href="http://www.linkedin.com/in/cops-sstc-793491295" target="_blank"><img src={navIcon1} alt="" /></a>
+              <a href="https://twitter.com/COPS_SSTC" target="_blank"><img src={navIcon2} alt="" /></a>
+              <a href="https://www.instagram.com/cops_sstc/" target="_blank"><img src={navIcon3} alt="" /></a>
             </div>
             <p>Club Of Programmers, SSTC</p>
           </Col>
