@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
-import events from "../assets/img/events.jpeg";
+
 
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
@@ -13,12 +13,7 @@ import TrackVisibility from 'react-on-screen';
 export const UpcommingEvents = () => {
 
   const projects = [
-    {
-      title: "Club Of Programmers",
-      description: "coding contest",
-      imgUrl: events,
-      registrationUrl: "https://forms.gle/NYpfp9GA6ZTiLL1UA",
-    },
+
   ];
 
   return (
