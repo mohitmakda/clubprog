@@ -9,11 +9,25 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import colorSharp from "../assets/img/color-sharp.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import codeloom from '../assets/img/codeloom.jpeg'
+import codecipher from '../assets/img/codecipher.jpeg'
 
 export const UpcommingEvents = () => {
 
   const projects = [
-
+    {
+      title:'CODELOOM',
+      description:'hackathon',
+      imgUrl:codeloom,
+      registrationUrl:'https://copssstc.netlify.app/',
+    },
+    
+    {
+      title:'Code Cipher',
+      description:'coding contest',
+      imgUrl:codecipher,
+      registrationUrl:'https://forms.gle/PugVe7EspXAFdxNZ7',
+    }
   ];
 
   return (
